@@ -1,0 +1,124 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #aed3cf;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 1920px;
+    height: 1080px;
+    border-radius: 30px;
+    background-color: #f2ede6;
+    padding: 120px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: repeat(5 1fr);
+    grid-template-areas: 
+        'img title title'
+        'img name contact'
+        'img email basedin'
+        'img message .'
+        'img button sns'
+    ;
+    gap: 80px 250px;
+}
+
+.img-area {
+    width: 550px;
+    height: 840px;
+    display: inline-block;
+    grid-row: span 5fr;
+    grid-area: img;
+}
+
+.img-area img {
+    width: 100%;
+}
+
+h2 {
+    grid-area: title;
+    font-family: "Playfair Display", serif;
+    grid-column: 2fr;
+    display: block;
+    font-size: 112px;
+    color: #00054b;
+}
+
+#name-field {
+    grid-area: name;
+}
+#eamil-field {
+    grid-area: eamil;
+}
+#message-field {
+    grid-area: message;
+}
+.contact {
+    grid-area: contact;
+    font-size: 32px;
+}
+.basedIn {
+    grid-area: basedin;
+    font-size: 32px;
+}
+.sns {
+    grid-area: sns;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 64px;
+}
+button {
+    grid-area: button;
+}
+
+#wrap input, textarea {
+    font-size: 32px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid #00054b;
+}
+
+#wrap input {
+    padding-bottom: 40px;
+}
+
+.field-area div {
+    margin-bottom: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 24px;
+    background-color: #00054b;
+    border: none;
+    border-radius: 48px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.sns img {
+    width: 48px;
+}

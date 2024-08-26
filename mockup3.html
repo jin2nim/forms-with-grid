@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./mockup3.css">
+    <title>forms-with-grid</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Book your appointment now</h2>
+        <p>So our team can reach out to you on time</p>
+    
+        <div id="name-field">
+            <label for="name-input">Full Name</label>
+            <input type="text" id="name-input" name="name" placeholder="eg: John Doe" required>
+        </div>
+        <div id="email-field">
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" name="email" placeholder="eg: john@email.com" required>
+        </div>
+        <div id="phone-field">
+            <label for="phone-select">Phone Number</label>
+            <select id="phone-select" name="national">
+                <option value="1">+1</option>
+                <option value="39">+39</option>
+                <option value="55">+55</option>
+                <option value="81">+81</option>
+                <option value="82">+82</option>
+            </select>
+            <input type="tel" id="phone-input" name="phone" placeholder="543210987">
+        </div>
+
+        <div id="dropdown-field">
+            <label for="date-select">Available Date</label>
+            <select id="date-select" name="date">
+                <option value="">Select</option>
+                <option value="1">1st Aug</option>
+                <option value="2">2nd Aug</option>
+                <option value="3">3th Aug</option>
+                <option value="4">4th Aug</option>
+            </select>
+        </div>
+
+        <div id="message-field">
+            <label for="message-area">Share Your Message</label>
+            <textarea id="message-area" name="message" placeholder="Message"></textarea>
+        </div>
+
+        <button id="submit">
+            <p>Book Now</p>
+            <img src="./img/arrow_forward_24dp_FFFFFF_FILL0_wght200_GRAD0_opsz24.svg" alt="arrow">
+        </button>
+    </div>
+</body>
+</html>

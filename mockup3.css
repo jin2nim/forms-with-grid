@@ -1,0 +1,139 @@
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #ccc;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        'title title'
+        'sub-title sub-title'
+        'name dropdown'
+        'email message'
+        'phone message'
+        '. submit'
+    ;
+}
+
+#container h2 {
+    grid-area: title;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#container p {
+    grid-area: sub-title;
+    font-size: 16px;
+}
+
+#name-field {
+    grid-area: name;
+}
+#email-field {
+    grid-area: email;
+}
+#phone-field {
+    grid-area: phone;
+}
+#dropdown-field {
+    grid-area: dropdown;
+}
+#message-field {
+    grid-area: message;
+}
+#submit {
+    grid-area: submit;
+}
+
+#container label {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#container input, textarea {
+    padding: 10px 0 10px 15px;
+    border: 1px solid #eef4ff;
+    background-color: #f6f9ff;
+    border-radius: 5px;
+}
+
+select {
+    border: 1px solid #eef4ff;
+    background-color: #f6f9ff;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 0;
+}
+
+#name-field input, 
+#email-field input, 
+#dropdown-field select, 
+#message-field textarea {
+    display: block;
+    width: 100%;
+}
+
+#phone-field select {
+    width: 45px;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    padding-left: 2px;
+}
+
+#phone-field input {
+    width: calc(100% - 40px);
+    margin: -7px;
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+}
+
+textarea {
+    height: calc(100% - 35px);
+    resize: none;
+}
+
+button {
+    width: 50%;
+    justify-self: end;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button p, button img {
+    display: inline-block;
+    vertical-align: middle;
+}

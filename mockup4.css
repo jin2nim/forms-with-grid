@@ -1,0 +1,105 @@
+/* font */
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    padding: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #EADFDE;
+    margin-top: 100px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 80px;
+    grid-template-areas: 
+        'title title'
+        'f-name l-name'
+        'email job'
+        'address address'
+        'city pincode'
+        'date file'
+        '. button'
+    ;
+}
+
+.container h2 {
+    font-size: 25px;
+    grid-column: span 2;
+    grid-area: title;
+}
+
+#f-name-field {grid-area: f-name;}
+#l-name-field {grid-area: l-name;}
+#email-field {grid-area: email;}
+#job-field {grid-area: job;}
+#city-field {grid-area: city;}
+#pincode-field {grid-area: pincode;}
+#date-field {grid-area: date;}
+#file-field {grid-area: file;}
+
+
+.container input, button {
+    font-family: "Inter", sans-serif;  
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#address-field {
+    grid-column: span 2;
+    grid-area: address;
+}
+
+#address-field textarea {
+    height: 100px;
+    resize: none;
+}
+
+.container input, 
+#address-field textarea,
+select {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+#date-field input {
+    color: #333;
+}
+
+button {
+    width: 70%;
+    background-color: #1b52df;
+    border-radius: 3px;    padding: 10px;
+    color: #fff;
+    border: none;
+    justify-self: end;
+    grid-area: button;
+}

@@ -1,0 +1,95 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.mockup1 {
+    background-color: #162ae3;
+    margin: 0 auto;
+    width: 598px;
+    height: 495px;
+    margin-top: 10%;
+    background-image: url(./img/Contact\ Form\ 5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 96px 78px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 441px;
+    height: 303px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        'title title'
+        'sub-title sub-title'
+        'name email'
+        'phone phone'
+        '. . '
+        '. . '
+        'submit .'
+    ;
+}
+
+.container h2 {
+    grid-area: title;
+    width: 100%;
+    text-align: justify;
+    font-size: 37px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container p {
+    grid-area: sub-title;
+    text-align: justify;
+    font-size: 18px;
+    color: #fff;
+}
+
+#name-field {
+    grid-area: name;   
+}
+
+#email-field {
+    grid-area: email;
+}
+
+#phone-field {
+    grid-area: phone;
+}
+
+#submit {
+    grid-area: submit;
+    width: 70%;
+    border-radius: 6px;
+    border: none;
+    color: #162ae3;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px;
+    line-height: 16px;
+    /* margin-top: 50px; */
+}
+
+#name-field input, 
+#email-field input, 
+#phone-field input {
+    border-radius: 6px;
+    padding: 12px 0 12px 16px;
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    line-height: 16px;
+}
